@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <link rel="shortcut icon" href="image/img.png">
+         
+
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <br>
+               <h2 class="text-center" style="font-style: italic">Simple Calculator</h2>
+            </div>
+          
+          </div>
+      
+      
+      </div>
+      <div class="container">
+         <div class="row justify-content-center py-4">
+          <div class="col-sm-6">
+             <form name="calculator">
+        <input type="text" name="display" class="form-control bg-dark text-white" readonly >
+        <input type="button" name="" value="1" onclick="click1()" class="btn btn-dark">
+        <input type="button" name="" value="2"onclick="click2()"class="btn btn-dark">
+        <input type="button" name="" value="3" onclick="click3()" class="btn btn-dark">
+        <input type="button" name="" value="4" onclick="click4()" class="btn btn-dark">
+        <input type="button" name="" value="5" onclick="click5()" class="btn btn-dark">
+        <input type="button" name="" value="6" onclick="click6()" class="btn btn-dark">
+        <input type="button" name="" value="7" onclick="click7()" class="btn btn-dark">
+        <input type="button" name="" value="8" onclick="click8()" class="btn btn-dark">
+        <input type="button" name="" value="9" onclick="click9()" class="btn btn-dark">
+        <input type="button" name="" value="0" onclick="click0()" class="btn btn-dark">
+        <input type="button" name="" value="+" onclick="clickadd()" class="btn btn-dark">
+        <input type="button" name="" value="-" onclick="clicksub()" class="btn btn-dark">
+        <input type="button" name="" value="*" onclick="clickmul()" class="btn btn-dark">
+        <input type="button" name="" value="/" onclick="clickdiv()" class="btn btn-dark">
+        <input type="button" name="" value="clc" onclick="clickclc()" class="btn btn-dark">
+        <input type="button" name="" value="=" onclick="clickeql()" class="btn btn-dark">
+              </form>
+             </div>
+          </div>      
+      </div>
+      <section class="sections sec-copy">
+      <div class="copyright text-center">
+          <P style="font-size: 25px; font-style: italic">&copy; Ahmad Gomma 2020</P> 
+          
+          </div>
+      </section>
+      <script>
+        function click1()
+          {
+              document.calculator.display.value+=1
+          }
+          function click2()
+          {
+              document.calculator.display.value+=2
+          }
+          function click3()
+          {
+              document.calculator.display.value+=3
+          }
+          function click4()
+          {
+              document.calculator.display.value+=4
+          }
+          function click5()
+          {
+              document.calculator.display.value+=5
+          }
+          function click6()
+          {
+              document.calculator.display.value+=6
+          }
+          function click7()
+          {
+              document.calculator.display.value+=7
+          }
+          function click8()
+          {
+              document.calculator.display.value+=8
+          }
+          function click9()
+          {
+              document.calculator.display.value+=9
+          }
+          function click0()
+          {
+              document.calculator.display.value+=0
+          }
+        
+          function clickadd()
+          {
+              document.calculator.display.value+="+"
+          }
+          function clicksub()
+          {
+              document.calculator.display.value+="-"
+          }
+          function clickmul()
+          {
+              document.calculator.display.value+="*"
+          }
+          function clickdiv()
+          {
+              document.calculator.display.value+="/"
+          }
+          function clickclc()
+          {
+              document.calculator.display.value=""
+          }
+          function clickeql()
+          {
+              var Display = eval(document.calculator.display.value);
+              document.calculator.display.value=Display;
+          }
+      </script>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
